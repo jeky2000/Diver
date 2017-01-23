@@ -53,12 +53,21 @@
       <DependentUpon>Diver.cs</DependentUpon>
     </Compile>
     <Compile Include="hoppare.cs" />
+    <Compile Include="Points.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Points.Designer.cs">
+      <DependentUpon>Points.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tournament.cs" />
     <Compile Include="judge.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Diver.resx">
       <DependentUpon>Diver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Points.resx">
+      <DependentUpon>Points.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

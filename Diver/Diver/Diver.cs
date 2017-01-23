@@ -13,8 +13,11 @@ namespace Diver
     public partial class Diver : Form
     {
         private Tournament tournatment = new Tournament();
+        //lägg till till en annan list
+        private List<hoppare> hopparedata = new List<hoppare>();//det här är empty
         //write to the list in the design
         BindingSource hoppareBinding = new BindingSource();
+        BindingSource hoppbinding = new BindingSource();
         public Diver()
         {
             //dont write anything befor initializecomponet()
@@ -25,6 +28,13 @@ namespace Diver
 
             DiverList.DisplayMember = "Display";
             DiverList.DisplayMember = "Display";
+            //lägg till från vänster lista to right lista
+            hoppbinding.DataSource = hopparedata;
+            pointlist.DataSource = hoppbinding;
+
+            pointlist.DisplayMember = "Diplay";
+            pointlist.DisplayMember = "Display";
+
         }
 
         private void Diver_Load(object sender, EventArgs e)
@@ -49,5 +59,21 @@ namespace Diver
             tournatment.Name = "OS";
         }
 
+        private void btnadd_Click(object sender, EventArgs e)
+        {
+            Points s = new Points();
+            s.Show(this);
+            
+            //figure out what is selected from the diver list
+            //copy that diver to point list
+            //do we remove the diver from the diver list? - no
+            hoppare selectedItem = (hoppare)DiverList.SelectedItem;
+
+            //MessageBox.Show(selectedItem.FirstName);
+            hopparedata.Add(selectedItem);
+            hoppbinding.ResetBindings(true);//list is not changed
+            
+
+        }
     }
 }

@@ -72,6 +72,7 @@
             this.btnadd.TabIndex = 3;
             this.btnadd.Text = "add";
             this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
             // pointlist
             // 
