@@ -12,7 +12,7 @@ namespace UnitTesttAdmin
         {
             hoppare h1 = new hoppare();
 
-            Assert.AreEqual("kalle", false);
+            Assert.AreEqual("son", true);
         }
     }
 }

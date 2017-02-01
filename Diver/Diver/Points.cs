@@ -38,5 +38,13 @@ namespace Diver
         {
 
         }
+
+        private void btncalculate_Click(object sender, EventArgs e)
+        {
+            
+            Calculate c = new Calculate();
+
+            txtcalculate.Text = c.ToString();
+        }
     }
 }
