@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Diver
 {
-    public class judge
+    public class judge :Tournament
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

@@ -43,9 +43,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Diver\Diver.csproj">
+    <ProjectReference Include="..\Diver\Admin.csproj">
       <Project>{9874ea0c-95cd-44a0-a933-2f43dbbecf04}</Project>
-      <Name>Diver</Name>
+      <Name>Admin</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

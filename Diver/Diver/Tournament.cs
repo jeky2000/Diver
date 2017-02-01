@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace Diver
 {
-    public class Tournament
+    //[Serializable()]
+    //[xmligrnor]= om du inte vill har i xml
+    public class Tournament 
     {
-        public string Name { get; set; }
-        public string date { get; set; }
-        public string location { get; set; }
+
+        //kan sparas i data bas eller xml fil
+        public string Name { get; set; } = "-";
+        public string date { get; set; } = "-";
+        public string location { get; set; } = "-";
         public List<judge> judges { get; set; }
         public List<hoppare> hopparelist { get; set; }
 

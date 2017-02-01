@@ -15,9 +15,26 @@ namespace Diver
         public Points()
         {
             InitializeComponent();
+
         }
 
         private void hoppareName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+     
+
+        private void Points_Load(object sender, EventArgs e)
+        {
+            labelfirstname.Text = Diver.SetvalueForname;
+            labellastname.Text = Diver.setvalueForlastname;
+            labeljump.Text = Diver.setvalueForjump;
+
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
