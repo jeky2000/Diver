@@ -17,11 +17,12 @@ namespace Diver
         public string location { get; set; } = "-";
         public List<judge> judges { get; set; }
         public List<hoppare> hopparelist { get; set; }
-
+        public List<int> number = new List<int>();
         public Tournament()
         {
             judges = new List<judge>();
             hopparelist = new List<hoppare>();
+            number = new List<int>();
         }
         
 

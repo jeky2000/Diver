@@ -41,29 +41,19 @@ namespace Diver
             int min = int.MaxValue;
             double sum = 0;
             double k = n.Sum();
-            double diffx = 3.0; 
-            double diffm= 0.0;
-            double diff = 0;
+
             foreach (int i in n)
 
             {
                 if (i > max)
-                {
                     max = i;
-                }
                 if (i < min)
-                {
                     min = i;
-                }
-                if (i > diffm && i < diffx)
-                {
-                    diff = i;
-                }
                 sum = k - max - min;
             }
-            double j = sum / (n.Count() - 2)*diff;
-            string myString = j.ToString();
-            return j;
+            double jumppoint = sum / (n.Count() - 2);
+            string myString = jumppoint.ToString();
+            return jumppoint;
 
         }
     }
