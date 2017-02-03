@@ -43,8 +43,10 @@ namespace Diver
         {
             
             Calculate c = new Calculate();
+            c.calculate();
+            txtcalculate.Show();
 
-            txtcalculate.Text = c.ToString();
+            
         }
     }
 }

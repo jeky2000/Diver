@@ -111,16 +111,14 @@ namespace Diver
             open.Show();
         }
 
-        private void DiverList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         public void pointlist_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-       
+        private void DivedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

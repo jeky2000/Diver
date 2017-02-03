@@ -61,7 +61,7 @@
             this.DiverList.Name = "DiverList";
             this.DiverList.Size = new System.Drawing.Size(262, 229);
             this.DiverList.TabIndex = 1;
-            this.DiverList.SelectedIndexChanged += new System.EventHandler(this.DiverList_SelectedIndexChanged);
+            this.DiverList.SelectedIndexChanged += new System.EventHandler(this.DivedIndexChanged);
             // 
             // diverlistboxlabel
             // 
